@@ -1,1 +1,40 @@
 __pycache__/
+
+######## UMB668 ########
+# ====== Apptainer / Singularity ======
+apptainer/*.sif
+apptainer/*.simg
+apptainer/*.img
+
+# ====== Python ======
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ====== Jupyter ======
+.ipynb_checkpoints/
+jupyter_cache/
+*.ipynb-checkpoints
+
+# ====== Editor ======
+.vscode/
+.idea/
+
+# ====== Logs ======
+*.log
+
+# ====== Environment ======
+.env
+*.env
+.env.*
+.DS_Store
+
+# ====== Large files ======
+*.pth
+*.bin
+*.pt
+*.ckpt
+*.h5
+*.npz
+
