@@ -6,11 +6,20 @@ apptainer/*.sif
 apptainer/*.simg
 apptainer/*.img
 
-# ====== Python ======
+# -------------------------
+#  Python 基础忽略
+# -------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
+
+# Virtual environments
+venv/
+env/
+.*env/
+test_env/
 
 # ====== Jupyter ======
 .ipynb_checkpoints/
@@ -38,3 +47,47 @@ jupyter_cache/
 *.h5
 *.npz
 
+# -------------------------
+#  你的 TRACE 项目专属忽略
+# -------------------------
+
+# ★ 实验输出（不需要 git 跟踪）
+experiments/logs/
+experiments/results/
+results/
+output/
+outputs/
+checkpoints/
+runs/
+
+# ★ wandb 缓存（非常大，不要进 repo）
+wandb/
+notebooks/wandb/
+notebooks/wandb/*
+
+# -------------------------
+#  你的 LogicNLI 生成结果（JSON 自动生成）
+# -------------------------
+LogicNLI_*_trans_decompose*.json
+
+# -------------------------
+#  容器 & 大文件
+# -------------------------
+apptainer/
+*.sif
+
+# -------------------------
+#  Jupyter Lab 临时
+# -------------------------
+.notebook/
+.jupyter/
+.jupyter_backup/
+
+# -------------------------
+#  系统文件
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
